@@ -1,0 +1,16 @@
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\bin\Debug\ADMIN.exe.config
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\bin\Debug\ADMIN.exe
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\bin\Debug\ADMIN.pdb
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.csproj.AssemblyReference.cache
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.Form1.resources
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.Properties.Resources.resources
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.ThongKeSach.resources
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.csproj.GenerateResource.cache
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.csproj.CoreCompileInputs.cache
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.exe
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.pdb
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.ThongKeDocGia.resources
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.TimkiemSach.resources
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.QuanLySach.resources
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.TraSach.resources
+D:\BTNHOMLTUD\ADMIN\Admin\ADMIN\obj\Debug\ADMIN.PhieuMuon.resources
