@@ -28,6 +28,8 @@ namespace ADMIN
             ham.HienThiDuLieuDG(dataGridView1, "select a.PHIEUMUON_MA,a.DOCGIA_MA,b.DOCGIA_TEN ,d.SACH_MA,d.SACH_TENSACH, a.NGAYMUON ,c.CHITIETMUON_NGAYTRA from PHIEUMUON a,DOCGIA b , CHITIETMUON c, sach d where a.DOCGIA_MA = b.DOCGIA_MA and c.PHIEUMUON_MA = a.PHIEUMUON_MA and c.SACH_MA = d.SACH_MA", conn);
             ham.LoadComboBox(comboBox1, "select docgia_ma from DOCGIA ", conn, "docgia_ma", "docgia_ma");
             ham.LoadComboBox(comboBox2, "select thuthu_ma from thuthu ", conn, "thuthu_ma", "thuthu_ma");
+            ham.LoadComboBox(comboBox3, "select   a.SACH_MA,a.SACH_TENSACH from SACH a", conn, "SACH_TENSACH", "SACH_MA");
+          
         }
 
         private void Them_Click(object sender, EventArgs e)
@@ -36,7 +38,7 @@ namespace ADMIN
             string mp = maphieu.Text;
              string mdg = comboBox1.SelectedValue.ToString();
             
-            string ms = masach.Text;
+            string ms = comboBox3.SelectedValue.ToString();
             string tt = comboBox2.SelectedValue.ToString();
             string ngayhientai = DateTime.Now.ToString("yyyy-MM-dd");
             string ngaytra = dateTimePicker1.Value.ToString("yyyy-MM-dd");
@@ -96,7 +98,7 @@ namespace ADMIN
             reader.Close();
             
             comboBox1.Text = "Chọn độc giả";
-            masach.Text = "";
+            comboBox3.Text = "Chọn sách";
             comboBox2.Text = "Chọn người lập phiếu";
         }
 
@@ -104,7 +106,7 @@ namespace ADMIN
         {
             maphieu.Enabled = false;
             maphieu.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            masach.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            comboBox3.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             comboBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
            dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
 
@@ -116,7 +118,7 @@ namespace ADMIN
             string mp = maphieu.Text;
             string mdg = comboBox1.SelectedValue.ToString();
 
-            string ms = masach.Text;
+            string ms = comboBox3.SelectedValue.ToString();
             string tt = comboBox2.SelectedValue.ToString();
             string ngayhientai = DateTime.Now.ToString("yyyy-MM-dd");
             string ngaytra = dateTimePicker1.Value.ToString("yyyy-MM-dd");
@@ -167,7 +169,7 @@ namespace ADMIN
                 // Xóa dữ liệu trên giao diện người dùng sau khi xóa thành công
                 maphieu.Text = "";
                 comboBox1.Text = "Chọn độc giả";
-                masach.Text = "";
+                comboBox3.Text = "Chọn sách";
                 comboBox2.Text = "Chọn người lập phiếu";
             }
         }
@@ -177,6 +179,57 @@ namespace ADMIN
             this.Hide();
             Form1 f = new Form1();
             f.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+            ham.HienThiDuLieuDG(dataGridView1, "select a.PHIEUMUON_MA,a.DOCGIA_MA,b.DOCGIA_TEN ,d.SACH_MA,d.SACH_TENSACH, a.NGAYMUON ,c.CHITIETMUON_NGAYTRA from PHIEUMUON a,DOCGIA b , CHITIETMUON c, sach d where a.DOCGIA_MA = b.DOCGIA_MA and c.PHIEUMUON_MA = a.PHIEUMUON_MA and c.SACH_MA = d.SACH_MA", conn);
+        }
+
+        private void masach_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }

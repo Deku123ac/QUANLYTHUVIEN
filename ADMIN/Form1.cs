@@ -52,7 +52,9 @@ namespace ADMIN
 
         private void trảSáchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            FormTraSach PT = new FormTraSach();
+            PT.Show();
         }
 
         private void mượnSáchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,6 +62,29 @@ namespace ADMIN
             this.Hide();
             PhieuMuon PM = new PhieuMuon();
             PM.Show();
+        }
+
+        private void danhMụcSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyTheLoai qltl = new QuanLyTheLoai();
+            qltl.Show();
+        }
+
+        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormTroGiup gt = new FormTroGiup();
+            gt.Show();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void độcGiảToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DocGia dg = new DocGia();   
+            dg.Show();
         }
     }
 }

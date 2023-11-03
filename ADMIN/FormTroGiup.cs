@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ADMIN
 {
-    public partial class TraSach : Form
+    public partial class FormTroGiup : Form
     {
-        public TraSach()
+        public FormTroGiup()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f = new Form1();
+            f.Show();
         }
     }
 }

@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocGia.Designer.cs">
+      <DependentUpon>DocGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTraSach.Designer.cs">
+      <DependentUpon>FormTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTroGiup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTroGiup.Designer.cs">
+      <DependentUpon>FormTroGiup.cs</DependentUpon>
     </Compile>
     <Compile Include="Ham.cs" />
     <Compile Include="PhieuMuon.cs">
@@ -66,6 +84,12 @@
     </Compile>
     <Compile Include="QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTheLoai.Designer.cs">
+      <DependentUpon>QuanLyTheLoai.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongKeDocGia.cs">
       <SubType>Form</SubType>
@@ -85,14 +109,17 @@
     <Compile Include="TimkiemSach.Designer.cs">
       <DependentUpon>TimkiemSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="TraSach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TraSach.Designer.cs">
-      <DependentUpon>TraSach.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="DocGia.resx">
+      <DependentUpon>DocGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTraSach.resx">
+      <DependentUpon>FormTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTroGiup.resx">
+      <DependentUpon>FormTroGiup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhieuMuon.resx">
       <DependentUpon>PhieuMuon.cs</DependentUpon>
@@ -109,6 +136,9 @@
     <EmbeddedResource Include="QuanLySach.resx">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTheLoai.resx">
+      <DependentUpon>QuanLyTheLoai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThongKeDocGia.resx">
       <DependentUpon>ThongKeDocGia.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TimkiemSach.resx">
       <DependentUpon>TimkiemSach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TraSach.resx">
-      <DependentUpon>TraSach.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -36,10 +36,10 @@ namespace ADMIN
                 " docgia a , PHIEUMUON b, CHITIETMUON c where a.DOCGIA_MA = b.DOCGIA_MA and b.PHIEUMUON_MA = c.PHIEUMUON_MA ", conn);
             else if (tuychon.Text == "Độc giả đã đang mượn sách")
                 ham.HienThiDuLieuDG(luoi, "select a.DOCGIA_MA,a.DOCGIA_TEN,a.DOCGIA_NAMSINH,a.sdt,a.diachi from" +
-               " docgia a , PHIEUMUON b, CHITIETMUON c where a.DOCGIA_MA = b.DOCGIA_MA and b.PHIEUMUON_MA = c.PHIEUMUON_MA and c.CHITIETMUON_NGAYTRA < GETDATE()", conn);
+               " docgia a , PHIEUMUON b, CHITIETMUON c where a.DOCGIA_MA = b.DOCGIA_MA and b.PHIEUMUON_MA = c.PHIEUMUON_MA and c.CHITIETMUON_NGAYTRA > GETDATE()", conn);
             else if (tuychon.Text == "Độc giả đã trả sách")
                 ham.HienThiDuLieuDG(luoi, "select a.DOCGIA_MA,a.DOCGIA_TEN,a.DOCGIA_NAMSINH,a.sdt,a.diachi from" +
-               " docgia a , PHIEUMUON b, CHITIETMUON c where a.DOCGIA_MA = b.DOCGIA_MA and b.PHIEUMUON_MA = c.PHIEUMUON_MA and c.CHITIETMUON_NGAYTRA > GETDATE()", conn);
+               " docgia a , PHIEUMUON b, CHITIETMUON c where a.DOCGIA_MA = b.DOCGIA_MA and b.PHIEUMUON_MA = c.PHIEUMUON_MA and c.CHITIETMUON_NGAYTRA < GETDATE()", conn);
         }
 
         private void button1_Click(object sender, EventArgs e)

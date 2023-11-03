@@ -35,7 +35,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.masach = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,18 +46,19 @@
             this.them = new System.Windows.Forms.Button();
             this.sua = new System.Windows.Forms.Button();
             this.xoa = new System.Windows.Forms.Button();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.maphieu);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.masach);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -75,12 +75,12 @@
             this.maphieu.Location = new System.Drawing.Point(326, 40);
             this.maphieu.Name = "maphieu";
             this.maphieu.Size = new System.Drawing.Size(266, 22);
-            this.maphieu.TabIndex = 17;
+            this.maphieu.TabIndex = 1;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(326, 277);
+            this.comboBox2.Location = new System.Drawing.Point(326, 269);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(266, 24);
             this.comboBox2.TabIndex = 16;
@@ -92,6 +92,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(266, 24);
             this.comboBox1.TabIndex = 15;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // label4
             // 
@@ -105,18 +106,10 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(326, 222);
+            this.dateTimePicker1.Location = new System.Drawing.Point(326, 203);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(266, 22);
             this.dateTimePicker1.TabIndex = 8;
-            // 
-            // masach
-            // 
-            this.masach.Location = new System.Drawing.Point(326, 153);
-            this.masach.Multiline = true;
-            this.masach.Name = "masach";
-            this.masach.Size = new System.Drawing.Size(266, 33);
-            this.masach.TabIndex = 7;
             // 
             // label5
             // 
@@ -225,6 +218,14 @@
             this.xoa.UseVisualStyleBackColor = true;
             this.xoa.Click += new System.EventHandler(this.xoa_Click);
             // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(326, 145);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(266, 24);
+            this.comboBox3.TabIndex = 17;
+            // 
             // PhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -252,7 +253,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox masach;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -267,5 +267,6 @@
         private System.Windows.Forms.TextBox maphieu;
         private System.Windows.Forms.Button sua;
         private System.Windows.Forms.Button xoa;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

@@ -190,7 +190,7 @@ namespace ADMIN
 
         private void luoi_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtmasach.Enabled = false;
+            
             txtmasach.Text = luoi.Rows[e.RowIndex].Cells[0].Value.ToString();
             txttensach.Text = luoi.Rows[e.RowIndex].Cells[1].Value.ToString();
             tennhaxb.Text = luoi.Rows[e.RowIndex].Cells[2].Value.ToString();
